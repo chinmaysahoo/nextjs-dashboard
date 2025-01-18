@@ -3,6 +3,16 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import { lusitana } from '@/app/ui/fonts';
 
+// Define or import the LatestInvoice type
+interface LatestInvoice {
+  id: string;
+  name: string;
+  email: string;
+  amount: string | number;
+  image_url: string;
+}
+
+
 export default async function LatestInvoices({
   latestInvoices,
 }: {
